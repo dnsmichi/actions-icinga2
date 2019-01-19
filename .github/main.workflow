@@ -1,4 +1,8 @@
-workflow "New workflow" {
+workflow "Main workflow" {
   on = "push"
-  resolves = ["build"]
+  resolves = ["Icinga 2"]
+}
+
+action "Icinga 2" {
+  uses = "./build"
 }
