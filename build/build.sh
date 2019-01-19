@@ -14,9 +14,9 @@ cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=/tmp/icinga2 -DIC
 cd ..
 
 echo "Running make in $(pwd)\n"
-make -j 2 -C release
-make test
-make install
+make -C release
+make test -C release
+make install -C release
 /tmp/icinga2/sbin/icinga2 --version
 /tmp/icinga2/sbin/icinga2 daemon -C -DRunAsUser=$(id -u -n) -DRunAsGroup=$(id -g -n)
 
