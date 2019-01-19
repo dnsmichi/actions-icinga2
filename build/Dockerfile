@@ -2,8 +2,8 @@ FROM debian:9
 
 LABEL "com.github.actions.name"="Icinga 2"
 LABEL "com.github.actions.description"="Build and test Icinga 2"
-LABEL "com.github.actions.icon"="mic"
-LABEL "com.github.actions.color"="green"
+LABEL "com.github.actions.icon"="activity"
+LABEL "com.github.actions.color"="blue"
 
 LABEL "repository"="http://github.com/dnsmichi/actions-icinga2"
 LABEL "homepage"="http://github.com/icinga"
